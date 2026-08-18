@@ -2,10 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
   images: {
-    domains: [],
-    remotePatterns: [],
+    unoptimized: true,
   },
+  basePath: '', // Change to '/your-repo-name' if deploying to user/org page
 }
 
 module.exports = nextConfig
